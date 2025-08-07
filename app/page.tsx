@@ -1,5 +1,3 @@
-import Image from "next/image"
-import Header from "./component/header"
 import AuthProvider from "./component/AuthProvider"
 import RequireAuth from "./component/RequireAuth"
 import DashboardPage from "./dashboard/page"
@@ -9,7 +7,7 @@ export default function Home() {
     <AuthProvider>
       <RequireAuth>
         <div className="p-4">
-          Hello how are you doing hoping to seeing you 
+          <DashboardPage />
         </div>
       </RequireAuth>
     </AuthProvider>
